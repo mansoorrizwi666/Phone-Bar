@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #FFFFCC;
+        }
+
+        .nav {
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            background: rgba(0, 0, 0, 0.4);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        .nav-items {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item {
+            color: #FFC;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0 10px;
+        }
+
+        .nav-item:hover {
+            color: #900;
+        }
+
+        .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('photos/main 6.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+   
+       .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .hero-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+			margin-left:15px;
+        }
+
+        .box {
+            background-color: #e0e0e0;
+            padding: 20px;
+            border: 1px solid #CCC;
+            box-sizing: border-box;
+			
+        }
+
+        .image-box, .content-box {
+            background-color: #000;
+            padding: 20px;
+            border: 10px double #900;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFC;
+			margin-left:0px;
+        }
+
+        .image-box img, .content-box img {
+            width: 100%;
+            max-width: 400px;
+            border: 10px groove #900;
+            border-radius: 10px;
+			
+        }
+
+         .contact, p {
+            
+		    text-align: center;
+            padding: 20px;
+            background-color: #900;
+            border-radius: 15px;
+			border-bottom-style:double;
+			border-color:#000;
+			margin-left:0px;
+        }
+
+        .contact a {
+            display: block;
+            color: #FFC;
+            margin: 10px 0;
+        }
+		
+		
+		
+		.a{height:50px; width:100%; background-image:linear-gradient(#FFC,#000,#FFC,#000)}
+
+        @media (max-width: 800px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .nav-item {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .hero h1 {
+                font-size: 24px;
+            }
+
+            .nav-item {
+                font-size: 12px;
+            }
+        }
+		
+		
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo-container">
+            
+        </div>
+        <div class="nav-items">
+            <ul class="nav-menu" style="margin-left:0px">
+                <li><a href="#" class="nav-item">APPLE</a></li>
+                <li><a href="#" class="nav-item">SAMSUNG</a></li>
+                <li><a href="#" class="nav-item">NOKIA</a></li>
+                <li><a href="#" class="nav-item">MOTOROLA</a></li>
+                <li><a href="#" class="nav-item">OPPO</a></li>
+                <li style="margin-right:40px"><a href="#" class="nav-item">REDMI</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1 style="border-color:#900; border-style:double">Welcome to Phone Bar<sub>&reg;</sub></h1>
+        </div>
+    </div>
+
+    <hr style="border-width: 8px; border-color: #900;">
+
+    <div class="container" style="margin-left:-10px">
+     <div style="border-style:double; border-color:#900"
+        <div class="box image-box">
+            <img src="photos/k2.jpg" alt="Image" style="margin-left:0px">
+        </div>
+       
+       <div class="box image-box">
+            <img src="photos/k5.jpg" alt="Image 3" style="margin-left:0px">
+        </div>
+       
+       <div class="box image-box">
+            <img src="photos/k4.jpg" alt="Image 2" style="margin-left:0px">
+        </div>
+        
+        <div class="box image-box">
+            <img src="photos/k3.jpg" alt="Image 2" style="margin-left:0px">
+        </div><br>
+        </div></div>
+        <hr style="border-width: 8px; border-color: #900;">
+        <div class="a">
+        <h3 style="color:#000"><marquee>PHONE BAR</marquee></h3>
+        </div>
+                
+        <div class="container" style="margin-left:-10px">
+          <div style="border-style:double; border-color:#000; border-radius:15px">
+        <div class="contact">
+            <h2 style="color:#FFC"><u>About Us</u></h2>
+            <p style="color:#FFC"><b>Established<br>in 2006</b></p>
+        </div>
+        
+         <div class="contact">
+            <h2 style="color:#FFC; margin-left:25px; height:70px"><u>Availability</u></h2>
+            <ul type="disc" style="color:#FFC; margin-top:-45px">
+            <li>All kinds of Mobiles</li>
+            <li>Mobile Accessories</li>
+            <li>Gaming Pc/ Pc / Laptop Accessories</li>
+            <li>Chargers</li>
+            <li>Cables</li>
+            <li>Cases</li>
+            <li>E.Liquid</li>
+            <li>Vaps</li>
+            </ul><p></p>
+        </div>
+        
+        
+         <div class="contact">
+          <h2 style="color:#FFC; margin-left:25px; height:70px"><u>Expert</u></h2>
+           <ul type="square" style="color:#FFC; margin-top:-40px">
+           <li>Mobiles</li><br>
+           <ul type="circle" style="margin-left:-40px"><li>( Apple/Samsung/Motorola )</li><br><li>( Nokia/Oppo/Redmi )</li></ul><br>
+           <li>Laptops</li>
+           <li>Computers</li>
+           </ul>
+           
+            </ul><p></p>
+        </div>
+       
+        <div class="contact">
+          
+            <h2 style="color:#FFC; margin-left:25px; height:70px"><u>Repairs</u></h2>
+            <ul type="square" style="color:#FFC; margin-top:-20px">
+            <li>Mobiles</li><br>
+            <li>Laptops</li><br>
+            <li>Computers</li>
+            </ul><p></p>
+        </div>
+       
+        
+       
+        <div class="contact">
+            <h2 style="color:#FFC; height:60px"><u>Contact us</u></h2>
+            <a href="tel:+441517086267" style="margin-top:-40px">Call us at 0151-7086267</a><br>
+            <a href="mailto:Phonebar142@gmail.com" style="margin-top:-10px">Phonebar142@gmail.com</a><br>
+            <hr style="color:#FFC; margin-top:-10px">
+            <p style="color:#FFC; margin-top:27px"><u>Address: 142 Charlotte Way,&nbsp; St.John Precinct, Liverpool, L1 1NA</u></p>
+        </div></div>
+        
+       
+        
+    </div>
+    
+    <div class="a"></div>
+</body>
+</html>
